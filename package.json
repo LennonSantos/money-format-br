@@ -1,6 +1,6 @@
 {
   "name": "money-format-br",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Converts an integer value to Brazilian currency format.",
   "main": "dist/money-format-br.cjs.js",
   "module": "dist/money-format-br.esm.js",
@@ -17,6 +17,8 @@
     "brazil"
   ],
   "author": "Lennon Bueno",
+  "repository": "https://github.com/LennonSantos/money-format-br",
+  "bugs": "https://github.com/LennonSantos/money-format-br/issues",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.23.9",
