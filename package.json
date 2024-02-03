@@ -1,0 +1,41 @@
+{
+  "name": "money-format-br",
+  "version": "0.0.1",
+  "description": "Converts an integer value to Brazilian currency format.",
+  "main": "dist/money-format-br.cjs.js",
+  "module": "dist/money-format-br.esm.js",
+  "browser": "dist/money-format-br.umd.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "lint": "eslint ./src",
+    "lint:fix": "eslint --fix --ext .js,.jsx ./src"
+  },
+  "keywords": [
+    "convert",
+    "money",
+    "brazil"
+  ],
+  "author": "Lennon Bueno",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "files": [
+    "dist",
+    "src"
+  ]
+}
