@@ -1,8 +1,8 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global["money-format-br"] = factory());
-})(this, (function () { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+  typeof define === 'function' && define.amd ? define(['exports'], factory) :
+  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global["money-format-br"] = {}));
+})(this, (function (exports) { 'use strict';
 
   /**
    * function that formats a value for the Brazilian money standard
@@ -15,8 +15,14 @@
       currency: 'BRL'
     });
   }
-  var src = moneyFormatBR;
+  var src = {
+    moneyFormatBR: moneyFormatBR
+  };
+  var src_1 = src.moneyFormatBR;
 
-  return src;
+  exports["default"] = src;
+  exports.moneyFormatBR = src_1;
+
+  Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
