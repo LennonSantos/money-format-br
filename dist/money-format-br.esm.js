@@ -9,4 +9,6 @@ function moneyFormatBR(money) {
     currency: 'BRL'
   });
 }
-module.exports = moneyFormatBR;
+module.exports = {
+  moneyFormatBR: moneyFormatBR
+};

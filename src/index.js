@@ -7,4 +7,4 @@ function moneyFormatBR (money) {
   return money.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 }
 
-module.exports = moneyFormatBR
+module.exports = { moneyFormatBR }
